@@ -2726,6 +2726,11 @@ $active-color: #3182bd;
   }
 
   #applicationpolicyset_policy_wizard {
+   &.wizard > .steps ul{
+      width: 50%;
+      margin-left: -40px;
+      padding: 10px;
+    }
     &.wizard > .steps ul li {
       .title {
         font-size: 12px;
@@ -2749,11 +2754,6 @@ $active-color: #3182bd;
         color: #fff;
         background: #5293C4;
       }
-    }
-    > div > ul {
-      width: 50%;
-      margin-left: -40px;
-      padding: 10px;
     }
   }
 /*security policy wizard ends here*/
