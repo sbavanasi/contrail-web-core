@@ -2688,6 +2688,7 @@ $active-color: #3182bd;
     background: -o-linear-gradient(#f7fdff, white);
     background: -moz-linear-gradient(#f7fdff, white);
     background: linear-gradient(#f7fdff, white);
+    pointer-events: none;
     a {
       background: transparent;
       &:hover {
@@ -2730,6 +2731,9 @@ $active-color: #3182bd;
       width: 50%;
       margin-left: -40px;
       padding: 10px;
+    }
+    &.wizard > .content{
+      min-height:380px !important;
     }
     &.wizard > .steps ul li {
       .title {
