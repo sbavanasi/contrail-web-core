@@ -866,6 +866,16 @@
     <form name="{{prefixId}}Form" id="{{modalId}}-form" onsubmit="return false;" class="">
     </form>
 </script>
+<script type="text/x-handlebars-template" id="firewall-polices-standalone-policies">
+    <div class="alert alert-error" style="display:none;" data-bind="visible: errors().{{prefixId}}_form_error">
+        <strong>Error: </strong>
+        <span data-bind="text: errors().{{prefixId}}_form_error"></span>
+    </div>
+    <div class="addNewFirewall_policy_count">
+        <div class="value pull-left"><span style="color:#949EA7;">All FW Policies:</span><span><a href="#" id="firewall_policies_all" style="color:#5293C4;font-weight:600;">&nbsp;&nbsp;{{this.firewallPolicyLen}}</a></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</div>
+        <div class="value pull-left"><span style="color:#949EA7;">Stand alone FW Polices:</span><span><a href="#" id="stand_alone_policies" style="color:#5293C4;font-weight:600;">&nbsp;&nbsp;{{this.standAlinePolicyLen}}</a></span></div>
+    </div>
+</script>
 <script type="text/x-handlebars-template" id="application-policy-set-edit-form-template">
     <div class="alert alert-error" style="display:none;" data-bind="visible: errors().{{prefixId}}_form_error">
         <strong>Error: </strong>
